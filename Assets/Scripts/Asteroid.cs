@@ -21,7 +21,7 @@ public class Asteroid : MonoBehaviour
 
         transform.localScale = Vector3.one * Random.Range(1f, 3f);
 
-        Destroy(gameObject, 10);
+        Destroy(gameObject, 13);
     }
 
     // Update is called once per frame

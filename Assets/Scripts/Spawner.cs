@@ -23,9 +23,9 @@ public class Spawner : MonoBehaviour
         if(timer < 0)
         {
             Spawn();
-            if (resetTime > .3f)
+            if (resetTime > .14f)
             {
-                resetTime -= .1f;
+                resetTime -= .01f;
             }
             timer = resetTime;
         }

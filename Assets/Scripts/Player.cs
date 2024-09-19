@@ -22,6 +22,7 @@ public class Player : MonoBehaviour
         vel += transform.forward * Input.GetAxisRaw("Vertical");
 
         rb.AddForce(vel * speed);
+        rb.AddForce(Vector3.back * Time.deltaTime * speed);
     }
 
     private void OnCollisionEnter(Collision collision)
