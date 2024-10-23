@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -21,8 +22,8 @@ public class Player : MonoBehaviour
         vel = transform.right * Input.GetAxisRaw("Horizontal");
         vel += transform.forward * Input.GetAxisRaw("Vertical");
 
-        rb.AddForce(vel * speed);
-        rb.AddForce(Vector3.back * Time.deltaTime * speed);
+        rb.AddForce(vel * speed * Time.deltaTime);
+       //rb.AddForce(Vector3.back * Time.deltaTime * speed);
     }
 
     private void OnCollisionEnter(Collision collision)

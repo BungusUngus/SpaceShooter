@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AddPoints : MonoBehaviour
 {
-    public int pointsValue;
+    public float pointsValue;
     private GameManager gameManager;
 
     public void Start()
