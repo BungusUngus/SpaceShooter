@@ -35,7 +35,6 @@ public class PointSpawner : MonoBehaviour
     void Spawn()
     {
         Vector3 pos = Vector3.Lerp(pointA.position, pointB.position, Random.Range(0f, 1f));
-        Vector3 pos = Vector3.zero;
         pos.x = Random.Range(pointA.position.x, pointB.position.x);
         pos.y = Random.Range(pointA.position.y, pointB.position.y);
         Instantiate(points, pos, Quaternion.identity);
